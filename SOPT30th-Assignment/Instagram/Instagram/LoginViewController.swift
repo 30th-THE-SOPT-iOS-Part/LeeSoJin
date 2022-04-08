@@ -16,10 +16,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var noAccount: UILabel!
     @IBOutlet weak var goToSignup: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var clearButton: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
+        self.emailTextField.addTarget(self, action: #selector(self.emailTextFieldDidChange(_:)), for: .editingChanged)
     }
     
     func configUI(){
@@ -31,6 +34,8 @@ class LoginViewController: UIViewController {
         
         forgotPassword.text = "비밀번호를 잊으셨나요?"
         forgotPassword.font = UIFont.systemFont(ofSize: 11, weight: .bold)
+        
+        clearButton.isHidden = true
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -44,6 +49,10 @@ class LoginViewController: UIViewController {
     @IBAction func signupButtonTap(_ sender: Any) {
         guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignupFirstViewController") as? SignupFirstViewController else { return }
         self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
+    @objc func emailTextFieldDidChange(_ sender: Any?) {
+        clearButton.isHidden = false
     }
     
 }

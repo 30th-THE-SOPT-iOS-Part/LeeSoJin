@@ -67,12 +67,18 @@
                                     <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXt-Au-rfn"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7jP-hh-n4I">
+                                <rect key="frame" x="320" y="367.5" width="23" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="FE3-lt-osK"/>
                     <connections>
+                        <outlet property="clearButton" destination="7jP-hh-n4I" id="99V-Yx-s6M"/>
                         <outlet property="emailTextField" destination="t5D-zf-uCZ" id="KP8-Pd-Lr6"/>
                         <outlet property="forgotPassword" destination="kYj-qD-Ri9" id="rV4-jV-Pee"/>
                         <outlet property="goToSignup" destination="xZe-Rn-0Wb" id="nUT-Md-FzA"/>
@@ -253,6 +259,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
