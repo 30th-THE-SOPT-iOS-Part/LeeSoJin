@@ -18,11 +18,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var clearButton: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        self.emailTextField.addTarget(self, action: #selector(self.emailTextFieldDidChange(_:)), for: .editingChanged)
+        
+        [emailTextField, passwordTextField].forEach {
+                $0?.addTarget(self,
+                              action: #selector(editingChanged(_:)),
+                              for: .editingChanged)
+            }
     }
     
     func configUI(){
@@ -36,6 +40,7 @@ class LoginViewController: UIViewController {
         forgotPassword.font = UIFont.systemFont(ofSize: 11, weight: .bold)
         
         clearButton.isHidden = true
+        loginButton.isEnabled = false
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -51,8 +56,21 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
-    @objc func emailTextFieldDidChange(_ sender: Any?) {
-        clearButton.isHidden = false
+    @objc func editingChanged(_ textField: UITextField) {
+        let isEmailTextFieldEmpty = emailTextField.text?.isEmpty == true
+        if(!isEmailTextFieldEmpty){
+            clearButton.isHidden = false
+        }
+        
+        /*
+         guard let setEmailTextField = !isEmailTextFieldEmpty else {
+            clearButton.isHidden = false
+        }
+         */
+        
+        loginButton.isEnabled = ![emailTextField, passwordTextField].compactMap {
+            $0.text?.isEmpty
+        }.contains(true)
     }
     
 }

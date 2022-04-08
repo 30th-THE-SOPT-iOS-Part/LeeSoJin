@@ -187,6 +187,7 @@
                     <connections>
                         <outlet property="nextButton" destination="Jaa-Hs-UN1" id="IwQ-DA-yjH"/>
                         <outlet property="noticeLabel" destination="uZk-HO-Yl6" id="eUk-7B-hP1"/>
+                        <outlet property="passwordTextField" destination="Fwl-ni-O2a" id="8Um-8o-R79"/>
                         <outlet property="textLabel" destination="tVp-Zj-il0" id="i4J-hn-3Uf"/>
                     </connections>
                 </viewController>
