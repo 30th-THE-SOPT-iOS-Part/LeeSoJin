@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var goToSignup: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var clearButton: UIImageView!
+    @IBOutlet weak var passwordHiddenButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,10 @@ class LoginViewController: UIViewController {
         loginButton.isEnabled = ![emailTextField, passwordTextField].compactMap {
             $0.text?.isEmpty
         }.contains(true)
+    }
+    
+    @IBAction func passwordHiddenButtonTap(_ sender: Any) {
+        passwordTextField.isSecureTextEntry.toggle()
     }
     
 }

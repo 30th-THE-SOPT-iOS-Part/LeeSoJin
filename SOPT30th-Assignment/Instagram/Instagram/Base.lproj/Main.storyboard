@@ -72,6 +72,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbI-GL-D2b">
+                                <rect key="frame" x="309" y="416" width="44" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" image="password_hidden_icon.png" title=""/>
+                                <connections>
+                                    <action selector="passwordHiddenButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xq2-Da-xFN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,6 +93,7 @@
                         <outlet property="imageView" destination="yK3-iX-4er" id="dIe-JJ-43W"/>
                         <outlet property="loginButton" destination="zG5-zm-Nc1" id="fu1-cn-xVj"/>
                         <outlet property="noAccount" destination="sKG-Bd-CfG" id="lF3-K0-dzD"/>
+                        <outlet property="passwordHiddenButton" destination="WbI-GL-D2b" id="jYf-gi-0rk"/>
                         <outlet property="passwordTextField" destination="kVN-dF-NZZ" id="IcK-Uq-0sC"/>
                     </connections>
                 </viewController>
@@ -260,6 +269,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="password_hidden_icon.png" width="20" height="20"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
