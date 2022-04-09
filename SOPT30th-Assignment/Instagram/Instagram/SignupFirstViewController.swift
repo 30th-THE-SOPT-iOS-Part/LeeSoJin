@@ -15,7 +15,6 @@ class SignupFirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        
         self.userNameTextField.addTarget(self, action: #selector(self.userNameTextFieldDidChange(_:)), for: .editingChanged)
     }
     

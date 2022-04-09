@@ -24,10 +24,8 @@ class LoginViewController: UIViewController {
         configUI()
         
         [emailTextField, passwordTextField].forEach {
-                $0?.addTarget(self,
-                              action: #selector(editingChanged(_:)),
-                              for: .editingChanged)
-            }
+            $0?.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
+        }
     }
     
     func configUI(){
@@ -63,7 +61,7 @@ class LoginViewController: UIViewController {
             clearButton.isHidden = false
         }
         
-        /*
+        /* 이렇게 작성하고 싶었는데 ..
          guard let setEmailTextField = !isEmailTextFieldEmpty else {
             clearButton.isHidden = false
         }

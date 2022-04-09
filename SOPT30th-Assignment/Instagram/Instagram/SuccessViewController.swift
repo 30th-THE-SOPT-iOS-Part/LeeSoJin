@@ -16,7 +16,6 @@ class SuccessViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configUI()
         if let userName = userName {
             userNameLabel.text = "\(userName)님 Instagram에 \n 오신 것을 환영합니다."
@@ -29,8 +28,6 @@ class SuccessViewController: UIViewController{
     
 
     @IBAction func goToLogin(_ sender: Any) {
-        
-        //self.navigationController?.popViewController(animated: true) : 네비게이션 방식
         self.dismiss(animated: true, completion: nil)
     }
 
