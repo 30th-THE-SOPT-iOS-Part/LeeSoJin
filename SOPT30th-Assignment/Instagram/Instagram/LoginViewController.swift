@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    // MARK: - @IBOutlet
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -19,33 +19,56 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var clearButton: UIImageView!
     @IBOutlet weak var passwordHiddenButton: UIButton!
     
+    // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        configUI()
-        
+        configureUI()
+        setUpTextField()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetTextField()
+    }
+    
+    // MARK: - UI
+    private func configureUI(){
+        imageView.image = UIImage(named: "insta_logo")
+        emailTextField.borderStyle = .roundedRect
+        passwordTextField.borderStyle = .roundedRect
+        forgotPassword.text = "비밀번호를 잊으셨나요?"
+        forgotPassword.font = UIFont.systemFont(ofSize: 11, weight: .bold)
+        loginButton.isEnabled = false
+        clearButton.isHidden = true
+    }
+  
+    // MARK: - Custom Methods
+    private func setUpTextField(){
         [emailTextField, passwordTextField].forEach {
-            $0?.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
+            $0?.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
         }
     }
     
-    func configUI(){
-        imageView.image = UIImage(named: "insta_logo")
-        
-        emailTextField.borderStyle = .roundedRect
-         passwordTextField.borderStyle = .roundedRect
-        //TODO : textField의 크기를 지정해주고 싶다 !
-        
-        forgotPassword.text = "비밀번호를 잊으셨나요?"
-        forgotPassword.font = UIFont.systemFont(ofSize: 11, weight: .bold)
-        
-        clearButton.isHidden = true
-        loginButton.isEnabled = false
+    private func resetTextField(){
+        emailTextField.text?.removeAll()
+        passwordTextField.text?.removeAll()
     }
     
-    @IBAction func loginButtonClicked(_ sender: Any) {
-        //TODO : sender에는 어떤 것이 들어가는지 공부하기 / 함수명은 어떤식으로 정하는지
+    private func setUpClearBtnStatus(){
+        let isEmailTextFieldEmpty = emailTextField.text?.isEmpty == true
+        clearButton.isHidden = !isEmailTextFieldEmpty ? false : true
+    }
+    
+    @objc func textFieldEditingChanged(_ textField: UITextField) {
+        setUpClearBtnStatus()
+        loginButton.isEnabled = ![emailTextField, passwordTextField].compactMap {
+            $0.text?.isEmpty
+        }.contains(true)
+    }
+    
+    // MARK: - @IBAction
+    @IBAction func loginButtonTap(_ sender: Any) {
         guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
-        
         nextViewController.userName = emailTextField.text
         self.present(nextViewController, animated: true, completion: nil)
     }
@@ -55,25 +78,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
-    @objc func editingChanged(_ textField: UITextField) {
-        let isEmailTextFieldEmpty = emailTextField.text?.isEmpty == true
-        if(!isEmailTextFieldEmpty){
-            clearButton.isHidden = false
-        }
-        
-        /* 이렇게 작성하고 싶었는데 ..
-         guard let setEmailTextField = !isEmailTextFieldEmpty else {
-            clearButton.isHidden = false
-        }
-         */
-        
-        loginButton.isEnabled = ![emailTextField, passwordTextField].compactMap {
-            $0.text?.isEmpty
-        }.contains(true)
-    }
-    
     @IBAction func passwordHiddenButtonTap(_ sender: Any) {
         passwordTextField.isSecureTextEntry.toggle()
     }
-    
 }
