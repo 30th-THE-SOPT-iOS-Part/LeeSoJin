@@ -55,8 +55,8 @@ class LoginViewController: UIViewController {
     }
     
     private func setUpClearBtnStatus(){
-        let isEmailTextFieldEmpty = emailTextField.text?.isEmpty == true
-        clearButton.isHidden = !isEmailTextFieldEmpty ? false : true
+        guard let isEmailTextFieldEmpty = emailTextField.text?.isEmpty else { return }
+        clearButton.isHidden = !isEmailTextFieldEmpty
     }
     
     @objc func textFieldEditingChanged(_ textField: UITextField) {
