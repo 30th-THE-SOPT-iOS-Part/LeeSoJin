@@ -29,7 +29,6 @@ class SignupSecondViewController: UIViewController {
     
     // MARK: - UI
     private func configureUI(){
-        noticeLabel.text = "비밀번호를 저장할 수 있으므로 iCloud 기기에서 로그인 \n정보를 입력하지 않아도 됩니다."
         nextButton.isEnabled = false
     }
     
