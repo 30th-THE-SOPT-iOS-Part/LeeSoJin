@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WsS-RD-RKA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="XgF-5a-lOI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="KwO-g4-rWF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QUT-zc-1pz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8Y-M0-RAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557" y="192"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Zmb-cu-Vib">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="eCN-FZ-dct" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ETd-Z1-4UQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9IM-Qi-itm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1552" y="-18"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KkL-DR-mdp">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="WsS-RD-RKA" customClass="TabBarController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6tt-PT-CMN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uba-xz-3wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="134"/>
+        </scene>
+    </scenes>
+</document>

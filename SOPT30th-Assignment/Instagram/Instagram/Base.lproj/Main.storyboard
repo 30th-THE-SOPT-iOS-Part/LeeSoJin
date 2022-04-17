@@ -326,6 +326,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-4V-qxN">
+                                <rect key="frame" x="125" y="520" width="165" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FZ8-gR-UWz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
