@@ -326,11 +326,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-4V-qxN">
-                                <rect key="frame" x="125" y="520" width="165" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-4V-qxN">
+                                <rect key="frame" x="114" y="505.5" width="187" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="lZX-7t-jdw"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다른 계정으로 로그인하기">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FZ8-gR-UWz"/>
@@ -338,6 +342,9 @@
                         <constraints>
                             <constraint firstItem="FZ8-gR-UWz" firstAttribute="trailing" secondItem="djw-Z7-mhQ" secondAttribute="trailing" constant="34" id="Cmu-a6-MJF"/>
                             <constraint firstItem="djw-Z7-mhQ" firstAttribute="top" secondItem="FZ8-gR-UWz" secondAttribute="top" constant="310" id="Zcv-YP-Iy0"/>
+                            <constraint firstItem="FZ8-gR-UWz" firstAttribute="trailing" secondItem="8cr-4V-qxN" secondAttribute="trailing" constant="113" id="hhe-m8-etf"/>
+                            <constraint firstItem="8cr-4V-qxN" firstAttribute="leading" secondItem="FZ8-gR-UWz" secondAttribute="leading" constant="114" id="jAX-wh-1sS"/>
+                            <constraint firstItem="8cr-4V-qxN" firstAttribute="top" secondItem="djw-Z7-mhQ" secondAttribute="bottom" constant="18" id="t1V-5t-3Xs"/>
                             <constraint firstItem="djw-Z7-mhQ" firstAttribute="leading" secondItem="FZ8-gR-UWz" secondAttribute="leading" constant="35" id="uDu-Bm-2Hd"/>
                         </constraints>
                     </view>

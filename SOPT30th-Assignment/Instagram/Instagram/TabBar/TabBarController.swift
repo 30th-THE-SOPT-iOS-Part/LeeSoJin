@@ -11,29 +11,52 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setTabBarController()
     }
     
     func setTabBarController(){
         let HomeStoryboard = UIStoryboard(name: Const.Storyboard.Name.home, bundle: nil)
         let SearchStoryboard = UIStoryboard(name: Const.Storyboard.Name.search, bundle: nil)
+        let ReelsStoryboard = UIStoryboard(name: Const.Storyboard.Name.reels, bundle: nil)
+        let ProfileStoryboard = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil)
+        let ShopStoryboard = UIStoryboard(name: Const.Storyboard.Name.shop, bundle: nil)
         guard let HomeViewController = HomeStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.home) as? HomeViewController,
-              let SearchViewController = SearchStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.search) as? SearchViewController
+              let SearchViewController = SearchStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.search) as? SearchViewController,
+              let ReelsViewController = ReelsStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reels) as? ReelsViewController,
+              let ProfileViewController = ProfileStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.profile) as? ProfileViewController,
+              let ShopViewController = ShopStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.shop) as? ShopViewController
         else { return }
         
         HomeViewController.tabBarItem = UITabBarItem(
-            title: "home",
-            image: UIImage(systemName: "house"),
-            selectedImage: UIImage(systemName: "house.fill")
+            title: "",
+            image: UIImage(named: "icn_home"),
+            selectedImage: UIImage(named: "icn_home_selected")
         )
         
         SearchViewController.tabBarItem = UITabBarItem(
-            title: "search",
-            image: UIImage(systemName: "person"),
-            selectedImage: UIImage(systemName: "person.fill")
+            title: "",
+            image: UIImage(named: "icn_search"),
+            selectedImage: UIImage(named: "icn_search_selected")
         )
         
-        setViewControllers([HomeViewController, SearchViewController], animated: true)
+        ReelsViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: UIImage(named: "icn_reels"),
+            selectedImage: UIImage(named: "icn_reels_selected")
+        )
+        
+        ShopViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: UIImage(named: "icn_shop"),
+            selectedImage: UIImage(named: "icn_shop_selected")
+        )
+        
+        ProfileViewController.tabBarItem = UITabBarItem(
+            title: "",
+            image: UIImage(named: "icn_profile"),
+            selectedImage: UIImage(named: "icn_profile_selected")
+        )
+        
+        setViewControllers([HomeViewController, SearchViewController, ReelsViewController, ShopViewController, ProfileViewController], animated: true)
     }
 }
