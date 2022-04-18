@@ -12,6 +12,9 @@ extension Const {
         struct identifier {
             static let home = "HomeViewController"
             static let search = "SearchViewController"
+            static let profile = "ProfileViewController"
+            static let shop = "ShopViewController"
+            static let reels = "ReelsViewController"
         }
     }
     

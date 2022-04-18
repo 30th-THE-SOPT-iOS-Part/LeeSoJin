@@ -13,6 +13,9 @@ extension Const {
             static let home = "Home"
             static let search = "Search"
             static let tabBar = "TabBar"
+            static let profile = "Profile"
+            static let shop = "Shop"
+            static let reels = "Reels"
         }
     }
 }
