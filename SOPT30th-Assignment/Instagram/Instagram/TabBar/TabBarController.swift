@@ -11,10 +11,18 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
         setTabBarController()
+        configureTabBarUI()
     }
     
-    func setTabBarController(){
+    private func configureTabBarUI(){
+        tabBar.backgroundColor = .white
+        tabBar.tintColor = .black
+        tabBar.unselectedItemTintColor = .black
+    }
+     
+    private func setTabBarController(){
         let HomeStoryboard = UIStoryboard(name: Const.Storyboard.Name.home, bundle: nil)
         let SearchStoryboard = UIStoryboard(name: Const.Storyboard.Name.search, bundle: nil)
         let ReelsStoryboard = UIStoryboard(name: Const.Storyboard.Name.reels, bundle: nil)
@@ -58,5 +66,22 @@ class TabBarController: UITabBarController {
         )
         
         setViewControllers([HomeViewController, SearchViewController, ReelsViewController, ShopViewController, ProfileViewController], animated: true)
+    }
+    
+}
+
+extension TabBarController: UITabBarControllerDelegate {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        guard let itemIndex = tabBar.items?.firstIndex(of: item) else { return }
+
+        if(itemIndex == 2){
+            tabBar.backgroundColor = .black
+            tabBar.tintColor = .white
+            tabBar.unselectedItemTintColor = .white
+        }else {
+            tabBar.backgroundColor = .white
+            tabBar.tintColor = .black
+            tabBar.unselectedItemTintColor = .black
+        }
     }
 }
