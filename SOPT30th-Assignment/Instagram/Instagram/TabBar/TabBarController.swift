@@ -23,16 +23,16 @@ class TabBarController: UITabBarController {
     }
      
     private func setTabBarController(){
-        let HomeStoryboard = UIStoryboard(name: Const.Storyboard.Name.home, bundle: nil)
-        let SearchStoryboard = UIStoryboard(name: Const.Storyboard.Name.search, bundle: nil)
-        let ReelsStoryboard = UIStoryboard(name: Const.Storyboard.Name.reels, bundle: nil)
-        let ProfileStoryboard = UIStoryboard(name: Const.Storyboard.Name.profile, bundle: nil)
-        let ShopStoryboard = UIStoryboard(name: Const.Storyboard.Name.shop, bundle: nil)
-        guard let HomeViewController = HomeStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.home) as? HomeViewController,
-              let SearchViewController = SearchStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.search) as? SearchViewController,
-              let ReelsViewController = ReelsStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reels) as? ReelsViewController,
-              let ProfileViewController = ProfileStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.profile) as? ProfileViewController,
-              let ShopViewController = ShopStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.shop) as? ShopViewController
+        let HomeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let SearchStoryboard = UIStoryboard(name: "Search", bundle: nil)
+        let ReelsStoryboard = UIStoryboard(name: "Reels", bundle: nil)
+        let ProfileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+        let ShopStoryboard = UIStoryboard(name: "Shop", bundle: nil)
+        guard let HomeViewController = HomeStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController,
+              let SearchViewController = SearchStoryboard.instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController,
+              let ReelsViewController = ReelsStoryboard.instantiateViewController(withIdentifier: "ReelsViewController") as? ReelsViewController,
+              let ProfileViewController = ProfileStoryboard.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController,
+              let ShopViewController = ShopStoryboard.instantiateViewController(withIdentifier: "ShopViewController") as? ShopViewController
         else { return }
         
         HomeViewController.tabBarItem = UITabBarItem(

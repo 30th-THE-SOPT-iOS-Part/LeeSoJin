@@ -24,9 +24,6 @@
 		2336D87E280C6039006C07E4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D87D280C6039006C07E4 /* SearchViewController.swift */; };
 		2336D882280C664E006C07E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D881280C664E006C07E4 /* Home.storyboard */; };
 		2336D884280C6662006C07E4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D883280C6662006C07E4 /* Search.storyboard */; };
-		2336D887280C699C006C07E4 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D886280C699C006C07E4 /* Const.swift */; };
-		2336D889280C69AC006C07E4 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D888280C69AC006C07E4 /* Storyboard.swift */; };
-		2336D88B280C69BD006C07E4 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D88A280C69BD006C07E4 /* ViewControllers.swift */; };
 		23406BBA27FDF3DE00A9CD68 /* SignupFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BB927FDF3DE00A9CD68 /* SignupFirstViewController.swift */; };
 		23406BBC27FDFE3900A9CD68 /* SignupSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BBB27FDFE3900A9CD68 /* SignupSecondViewController.swift */; };
 		23C401AE280DB1BF00DA6EAA /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401AD280DB1BF00DA6EAA /* Reels.storyboard */; };
@@ -57,9 +54,6 @@
 		2336D87D280C6039006C07E4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2336D881280C664E006C07E4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2336D883280C6662006C07E4 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
-		2336D886280C699C006C07E4 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		2336D888280C69AC006C07E4 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
-		2336D88A280C69BD006C07E4 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		23406BB927FDF3DE00A9CD68 /* SignupFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFirstViewController.swift; sourceTree = "<group>"; };
 		23406BBB27FDFE3900A9CD68 /* SignupSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSecondViewController.swift; sourceTree = "<group>"; };
 		23C401AD280DB1BF00DA6EAA /* Reels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reels.storyboard; sourceTree = "<group>"; };
@@ -103,7 +97,6 @@
 				23C401B6280DB21100DA6EAA /* Profile */,
 				23C401B1280DB1F000DA6EAA /* Shop */,
 				23C401AC280DB1B000DA6EAA /* Reels */,
-				2336D885280C693C006C07E4 /* Constants */,
 				2336D87A280C600C006C07E4 /* Search */,
 				2336D879280C5FF9006C07E4 /* Home */,
 				2336D874280C592F006C07E4 /* TabBar */,
@@ -158,16 +151,6 @@
 				2336D883280C6662006C07E4 /* Search.storyboard */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		2336D885280C693C006C07E4 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				2336D886280C699C006C07E4 /* Const.swift */,
-				2336D888280C69AC006C07E4 /* Storyboard.swift */,
-				2336D88A280C69BD006C07E4 /* ViewControllers.swift */,
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		23C401AC280DB1B000DA6EAA /* Reels */ = {
@@ -279,8 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23034B5427FC9A9800464A25 /* LoginViewController.swift in Sources */,
-				2336D889280C69AC006C07E4 /* Storyboard.swift in Sources */,
-				2336D88B280C69BD006C07E4 /* ViewControllers.swift in Sources */,
 				23406BBC27FDFE3900A9CD68 /* SignupSecondViewController.swift in Sources */,
 				23406BBA27FDF3DE00A9CD68 /* SignupFirstViewController.swift in Sources */,
 				2336D87E280C6039006C07E4 /* SearchViewController.swift in Sources */,
@@ -292,7 +273,6 @@
 				23034B3927FC86BD00464A25 /* SceneDelegate.swift in Sources */,
 				23C401BA280DB22800DA6EAA /* ProfileViewController.swift in Sources */,
 				23C401B3280DB1FF00DA6EAA /* ShopViewController.swift in Sources */,
-				2336D887280C699C006C07E4 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
