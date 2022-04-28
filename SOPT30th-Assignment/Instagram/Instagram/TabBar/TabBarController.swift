@@ -67,20 +67,23 @@ class TabBarController: UITabBarController {
         setViewControllers([HomeViewController, SearchViewController, ReelsViewController, ShopViewController, ProfileViewController], animated: true)
     }
     
+    func configureDefaultUI(){
+        tabBar.backgroundColor = .white
+        tabBar.tintColor = .black
+        tabBar.unselectedItemTintColor = .black
+    }
+    
+    func configureDarkUI(){
+        tabBar.backgroundColor = .black
+        tabBar.tintColor = .white
+        tabBar.unselectedItemTintColor = .white
+    }
+    
 }
 
 extension TabBarController: UITabBarControllerDelegate {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         guard let itemIndex = tabBar.items?.firstIndex(of: item) else { return }
-
-        if(itemIndex == 2){
-            tabBar.backgroundColor = .black
-            tabBar.tintColor = .white
-            tabBar.unselectedItemTintColor = .white
-        }else {
-            tabBar.backgroundColor = .white
-            tabBar.tintColor = .black
-            tabBar.unselectedItemTintColor = .black
-        }
+        itemIndex == 2 ? configureDarkUI() : configureDefaultUI()
     }
 }
