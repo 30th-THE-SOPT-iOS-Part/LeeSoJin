@@ -30,7 +30,6 @@ class SuccessViewController: UIViewController{
     
     // MARK: - @IBAction
     @IBAction func goToLogin(_ sender: Any) {
-        //self.dismiss(animated: true, completion: nil)
         let TabBarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
         guard let TabBarController = TabBarStoryboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
         else { return }
