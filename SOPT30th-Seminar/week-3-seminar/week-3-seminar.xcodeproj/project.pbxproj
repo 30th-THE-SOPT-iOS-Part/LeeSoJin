@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23559F5E281E5F7F00643502 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23559F5D281E5F7F00643502 /* MusicTableViewController.swift */; };
+		23559F60281E5F9200643502 /* MusicTableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23559F5F281E5F9200643502 /* MusicTableViewStoryboard.storyboard */; };
+		23559F63281E627F00643502 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23559F61281E627F00643502 /* MusicTableViewCell.swift */; };
+		23559F64281E627F00643502 /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23559F62281E627F00643502 /* MusicTableViewCell.xib */; };
+		23A02EF6281E54A2002E2D78 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A02EF5281E54A2002E2D78 /* TableView.storyboard */; };
+		23A02EF8281E5569002E2D78 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A02EF7281E5569002E2D78 /* TableViewController.swift */; };
+		23C95E1F281E9A39000BC37E /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C95E1E281E9A39000BC37E /* MusicDataModel.swift */; };
 		23E37511281AFFD000A34744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E37510281AFFD000A34744 /* AppDelegate.swift */; };
 		23E37513281AFFD000A34744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E37512281AFFD000A34744 /* SceneDelegate.swift */; };
 		23E37515281AFFD000A34744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E37514281AFFD000A34744 /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23559F5D281E5F7F00643502 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		23559F5F281E5F9200643502 /* MusicTableViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicTableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		23559F61281E627F00643502 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		23559F62281E627F00643502 /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		23A02EF5281E54A2002E2D78 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		23A02EF7281E5569002E2D78 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		23C95E1E281E9A39000BC37E /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		23E3750D281AFFD000A34744 /* week-3-seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "week-3-seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E37510281AFFD000A34744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23E37512281AFFD000A34744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23559F5C281E5E5000643502 /* MusicTableView */ = {
+			isa = PBXGroup;
+			children = (
+				23559F5D281E5F7F00643502 /* MusicTableViewController.swift */,
+				23559F5F281E5F9200643502 /* MusicTableViewStoryboard.storyboard */,
+				23559F61281E627F00643502 /* MusicTableViewCell.swift */,
+				23C95E1E281E9A39000BC37E /* MusicDataModel.swift */,
+				23559F62281E627F00643502 /* MusicTableViewCell.xib */,
+			);
+			path = MusicTableView;
+			sourceTree = "<group>";
+		};
+		23A02EF4281E548D002E2D78 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				23A02EF5281E54A2002E2D78 /* TableView.storyboard */,
+				23A02EF7281E5569002E2D78 /* TableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		23E37504281AFFD000A34744 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +91,8 @@
 		23E3750F281AFFD000A34744 /* week-3-seminar */ = {
 			isa = PBXGroup;
 			children = (
+				23559F5C281E5E5000643502 /* MusicTableView */,
+				23A02EF4281E548D002E2D78 /* TableView */,
 				23E37510281AFFD000A34744 /* AppDelegate.swift */,
 				23E37512281AFFD000A34744 /* SceneDelegate.swift */,
 				23E37514281AFFD000A34744 /* ViewController.swift */,
@@ -126,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E3751D281AFFD000A34744 /* LaunchScreen.storyboard in Resources */,
+				23559F60281E5F9200643502 /* MusicTableViewStoryboard.storyboard in Resources */,
 				23E3751A281AFFD000A34744 /* Assets.xcassets in Resources */,
+				23559F64281E627F00643502 /* MusicTableViewCell.xib in Resources */,
+				23A02EF6281E54A2002E2D78 /* TableView.storyboard in Resources */,
 				23E37518281AFFD000A34744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +180,11 @@
 			files = (
 				23E37515281AFFD000A34744 /* ViewController.swift in Sources */,
 				23E37511281AFFD000A34744 /* AppDelegate.swift in Sources */,
+				23559F5E281E5F7F00643502 /* MusicTableViewController.swift in Sources */,
 				23E37513281AFFD000A34744 /* SceneDelegate.swift in Sources */,
+				23A02EF8281E5569002E2D78 /* TableViewController.swift in Sources */,
+				23559F63281E627F00643502 /* MusicTableViewCell.swift in Sources */,
+				23C95E1F281E9A39000BC37E /* MusicDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
