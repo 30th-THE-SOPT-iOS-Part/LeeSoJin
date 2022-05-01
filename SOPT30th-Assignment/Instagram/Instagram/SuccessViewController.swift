@@ -17,14 +17,10 @@ class SuccessViewController: UIViewController{
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUI()
         setUserNameLabel()
     }
     
     // MARK: - UI
-    private func configureUI(){
-        welcomeText.text = "언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다."
-    }
     
     private func setUserNameLabel(){
         if let userName = userName {
@@ -34,7 +30,10 @@ class SuccessViewController: UIViewController{
     
     // MARK: - @IBAction
     @IBAction func goToLogin(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        let TabBarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let TabBarController = TabBarStoryboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
+        else { return }
+        self.present(TabBarController, animated: true, completion: nil)
     }
 
 }

@@ -18,8 +18,20 @@
 		23034B5227FC9A4A00464A25 /* password_shown_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 23034B4E27FC9A4A00464A25 /* password_shown_icon.png */; };
 		23034B5427FC9A9800464A25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23034B5327FC9A9800464A25 /* LoginViewController.swift */; };
 		23034B5627FCA37B00464A25 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23034B5527FCA37B00464A25 /* SuccessViewController.swift */; };
+		2336D876280C5DA8006C07E4 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D875280C5DA8006C07E4 /* TabBar.storyboard */; };
+		2336D878280C5E71006C07E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D877280C5E71006C07E4 /* TabBarController.swift */; };
+		2336D87C280C6029006C07E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D87B280C6029006C07E4 /* HomeViewController.swift */; };
+		2336D87E280C6039006C07E4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D87D280C6039006C07E4 /* SearchViewController.swift */; };
+		2336D882280C664E006C07E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D881280C664E006C07E4 /* Home.storyboard */; };
+		2336D884280C6662006C07E4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D883280C6662006C07E4 /* Search.storyboard */; };
 		23406BBA27FDF3DE00A9CD68 /* SignupFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BB927FDF3DE00A9CD68 /* SignupFirstViewController.swift */; };
 		23406BBC27FDFE3900A9CD68 /* SignupSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BBB27FDFE3900A9CD68 /* SignupSecondViewController.swift */; };
+		23C401AE280DB1BF00DA6EAA /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401AD280DB1BF00DA6EAA /* Reels.storyboard */; };
+		23C401B0280DB1CF00DA6EAA /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C401AF280DB1CF00DA6EAA /* ReelsViewController.swift */; };
+		23C401B3280DB1FF00DA6EAA /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C401B2280DB1FF00DA6EAA /* ShopViewController.swift */; };
+		23C401B5280DB20C00DA6EAA /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401B4280DB20C00DA6EAA /* Shop.storyboard */; };
+		23C401B8280DB21D00DA6EAA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401B7280DB21D00DA6EAA /* Profile.storyboard */; };
+		23C401BA280DB22800DA6EAA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C401B9280DB22800DA6EAA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +48,20 @@
 		23034B4E27FC9A4A00464A25 /* password_shown_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_shown_icon.png; sourceTree = "<group>"; };
 		23034B5327FC9A9800464A25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		23034B5527FCA37B00464A25 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		2336D875280C5DA8006C07E4 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		2336D877280C5E71006C07E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2336D87B280C6029006C07E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2336D87D280C6039006C07E4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2336D881280C664E006C07E4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2336D883280C6662006C07E4 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		23406BB927FDF3DE00A9CD68 /* SignupFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFirstViewController.swift; sourceTree = "<group>"; };
 		23406BBB27FDFE3900A9CD68 /* SignupSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSecondViewController.swift; sourceTree = "<group>"; };
+		23C401AD280DB1BF00DA6EAA /* Reels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reels.storyboard; sourceTree = "<group>"; };
+		23C401AF280DB1CF00DA6EAA /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		23C401B2280DB1FF00DA6EAA /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		23C401B4280DB20C00DA6EAA /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		23C401B7280DB21D00DA6EAA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		23C401B9280DB22800DA6EAA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +94,12 @@
 		23034B3527FC86BD00464A25 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				23C401B6280DB21100DA6EAA /* Profile */,
+				23C401B1280DB1F000DA6EAA /* Shop */,
+				23C401AC280DB1B000DA6EAA /* Reels */,
+				2336D87A280C600C006C07E4 /* Search */,
+				2336D879280C5FF9006C07E4 /* Home */,
+				2336D874280C592F006C07E4 /* TabBar */,
 				23034B4A27FC99C000464A25 /* Resources */,
 				23034B3627FC86BD00464A25 /* AppDelegate.swift */,
 				23034B3827FC86BD00464A25 /* SceneDelegate.swift */,
@@ -94,6 +124,60 @@
 				23034B4E27FC9A4A00464A25 /* password_shown_icon.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2336D874280C592F006C07E4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2336D875280C5DA8006C07E4 /* TabBar.storyboard */,
+				2336D877280C5E71006C07E4 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2336D879280C5FF9006C07E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2336D87B280C6029006C07E4 /* HomeViewController.swift */,
+				2336D881280C664E006C07E4 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2336D87A280C600C006C07E4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2336D87D280C6039006C07E4 /* SearchViewController.swift */,
+				2336D883280C6662006C07E4 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		23C401AC280DB1B000DA6EAA /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				23C401AD280DB1BF00DA6EAA /* Reels.storyboard */,
+				23C401AF280DB1CF00DA6EAA /* ReelsViewController.swift */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		23C401B1280DB1F000DA6EAA /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				23C401B2280DB1FF00DA6EAA /* ShopViewController.swift */,
+				23C401B4280DB20C00DA6EAA /* Shop.storyboard */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		23C401B6280DB21100DA6EAA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				23C401B7280DB21D00DA6EAA /* Profile.storyboard */,
+				23C401B9280DB22800DA6EAA /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +239,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				23034B5227FC9A4A00464A25 /* password_shown_icon.png in Resources */,
+				23C401B8280DB21D00DA6EAA /* Profile.storyboard in Resources */,
 				23034B4F27FC9A4A00464A25 /* insta_logo.png in Resources */,
 				23034B4327FC86BD00464A25 /* LaunchScreen.storyboard in Resources */,
+				23C401B5280DB20C00DA6EAA /* Shop.storyboard in Resources */,
+				2336D882280C664E006C07E4 /* Home.storyboard in Resources */,
+				2336D884280C6662006C07E4 /* Search.storyboard in Resources */,
+				23C401AE280DB1BF00DA6EAA /* Reels.storyboard in Resources */,
 				23034B5127FC9A4A00464A25 /* back.png in Resources */,
+				2336D876280C5DA8006C07E4 /* TabBar.storyboard in Resources */,
 				23034B5027FC9A4A00464A25 /* password_hidden_icon.png in Resources */,
 				23034B4027FC86BD00464A25 /* Assets.xcassets in Resources */,
 				23034B3E27FC86BD00464A25 /* Main.storyboard in Resources */,
@@ -174,9 +264,15 @@
 				23034B5427FC9A9800464A25 /* LoginViewController.swift in Sources */,
 				23406BBC27FDFE3900A9CD68 /* SignupSecondViewController.swift in Sources */,
 				23406BBA27FDF3DE00A9CD68 /* SignupFirstViewController.swift in Sources */,
+				2336D87E280C6039006C07E4 /* SearchViewController.swift in Sources */,
+				23C401B0280DB1CF00DA6EAA /* ReelsViewController.swift in Sources */,
+				2336D87C280C6029006C07E4 /* HomeViewController.swift in Sources */,
 				23034B3727FC86BD00464A25 /* AppDelegate.swift in Sources */,
+				2336D878280C5E71006C07E4 /* TabBarController.swift in Sources */,
 				23034B5627FCA37B00464A25 /* SuccessViewController.swift in Sources */,
 				23034B3927FC86BD00464A25 /* SceneDelegate.swift in Sources */,
+				23C401BA280DB22800DA6EAA /* ProfileViewController.swift in Sources */,
+				23C401B3280DB1FF00DA6EAA /* ShopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.sopt.Instagram;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sopt.Instagram.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -366,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.sopt.Instagram;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sopt.Instagram.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
