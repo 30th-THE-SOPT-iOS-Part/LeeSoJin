@@ -70,7 +70,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTap(_ sender: Any) {
         guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
         nextViewController.userName = emailTextField.text
-        self.present(nextViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     @IBAction func signupButtonTap(_ sender: Any) {
