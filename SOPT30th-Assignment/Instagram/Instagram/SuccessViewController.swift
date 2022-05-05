@@ -42,7 +42,8 @@ class SuccessViewController: UIViewController{
         let TabBarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
         guard let TabBarController = TabBarStoryboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
         else { return }
-        self.navigationController?.pushViewController(TabBarController, animated: true)
+        guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
+        delegate.window?.rootViewController = TabBarController
     }
 
 
