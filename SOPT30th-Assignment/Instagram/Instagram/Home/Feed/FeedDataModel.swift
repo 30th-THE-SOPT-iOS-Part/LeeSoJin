@@ -18,19 +18,9 @@ struct FeedDataModel{
 
 extension FeedDataModel{
     static let sampleData: [FeedDataModel] = [
-        FeedDataModel(userImageName: "avatar1", userName: "avatar2", feedImageName: "postImage1", likeCount: 30, comment: "기회는 일어나는 것이 아니라 만들어내는 것이다", commentCount: 19),
-        FeedDataModel(userImageName: "avatar1", userName: "avatar2", feedImageName: "postImage1", likeCount: 30, comment: "기회는 일어나는 것이 아니라 만들어내는 것이다", commentCount: 19),
-        FeedDataModel(userImageName: "avatar1", userName: "avatar2", feedImageName: "postImage1", likeCount: 30, comment: "기회는 일어나는 것이 아니라 만들어내는 것이다", commentCount: 19),
-        FeedDataModel(userImageName: "avatar1", userName: "avatar2", feedImageName: "postImage1", likeCount: 30, comment: "기회는 일어나는 것이 아니라 만들어내는 것이다", commentCount: 19)
+        FeedDataModel(userImageName: "avatar1", userName: "avatar1", feedImageName: "postImage1", likeCount: 30, comment: "📚기회는 일어나는 것이 아니라 만들어내는 것이다", commentCount: 19),
+        FeedDataModel(userImageName: "avatar2", userName: "avatar2", feedImageName: "postImage2", likeCount: 330, comment: "👊🏻내 인생 파이팅", commentCount: 24),
+        FeedDataModel(userImageName: "avatar3", userName: "avatar3", feedImageName: "postImage3", likeCount: 130, comment: "너는 그렇게 운전만해 난난나나🚙", commentCount: 100),
+        FeedDataModel(userImageName: "avatar4", userName: "avatar4", feedImageName: "postImage4", likeCount: 30, comment: "기회는 일어나는 것이 아니라 만들어내는 것이다", commentCount: 19)
     ]
 }
-
-//
-//func setData(_ feedData : FeedDataModel){
-//    userImgView.image = UIImage(named: feedData.userImageName)
-//    userNameLabel.text = feedData.userName
-//    userCommentLabel.text = feedData.userName
-//    likeCountLabel.text = "좋아요 \(feedData.likeCount)개"
-//    userCommentLabel.text = feedData.comment
-//    moreCommentLabel.text = "댓글 \(feedData.commentCount)개 모두 보기"
-//}
