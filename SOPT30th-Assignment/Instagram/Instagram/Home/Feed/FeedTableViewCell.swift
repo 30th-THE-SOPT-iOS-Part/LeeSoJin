@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LikeBtnDelegate{
+    func likeBtnTap(index:Int)
+}
+
 class FeedTableViewCell: UITableViewCell {
 
     static let identifier = "FeedTableViewCell"
@@ -15,7 +19,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var feedImgView: UIImageView!
-    @IBOutlet weak var likeBtn: UIStackView!
+    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var commentBtn: UIButton!
     @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var bookMarkBtn: UIButton!
@@ -23,6 +27,15 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var userCommnetLabel: UILabel!
     @IBOutlet weak var commentUserNameLabel: UILabel!
     @IBOutlet weak var moreCommentLabel: UILabel!
+    var index:Int = 0
+    var delegate: LikeBtnDelegate?
+    var isLikeBtnTap:Bool = false
+    
+    @IBAction func likeBtnTap(_ sender: Any) {
+        delegate?.likeBtnTap(index: index)
+        isLikeBtnTap.toggle()
+        likeBtn.setImage(isLikeBtnTap ? UIImage(named: "icn_like") : UIImage(named: "Like"), for: UIControl.State.normal)
+    }
     
     // MARK: - LifeCycle
     override func awakeFromNib() {

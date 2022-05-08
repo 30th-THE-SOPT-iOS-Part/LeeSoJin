@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     // MARK: - @IBOutlet
     @IBOutlet weak var feedTableView: UITableView!
+    var likeBtnTap: Bool? = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,13 @@ class HomeViewController: UIViewController {
     private func registerDelegate(){
         feedTableView.delegate = self
         feedTableView.dataSource = self
+    }
+}
+
+// MARK: - likeBtnDelegate
+extension HomeViewController: LikeBtnDelegate{
+    func likeBtnTap(index: Int) {
+        print("클릭된 버튼 : \(index)")
     }
 }
 
@@ -55,12 +63,12 @@ extension HomeViewController: UITableViewDataSource{
         switch indexPath.section{
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: StoryTableViewCell.identifier, for: indexPath) as? StoryTableViewCell else { return UITableViewCell() }
-
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.identifier, for: indexPath) as? FeedTableViewCell else { return UITableViewCell() }
-
             cell.setData(FeedDataModel.sampleData[indexPath.row])
+            cell.index = indexPath.row
+            cell.delegate = self
             return cell
         default:
             return UITableViewCell()
