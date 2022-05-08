@@ -24,6 +24,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var commentUserNameLabel: UILabel!
     @IBOutlet weak var moreCommentLabel: UILabel!
     
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }
