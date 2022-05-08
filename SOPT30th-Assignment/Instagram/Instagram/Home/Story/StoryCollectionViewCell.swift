@@ -8,12 +8,12 @@
 import UIKit
 
 class StoryCollectionViewCell: UICollectionViewCell {
-
+    // MARK: - @IBOutlet
     static let identifier = "StoryCollectionViewCell"
-    
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userImage: UIImageView!
     
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
     }
