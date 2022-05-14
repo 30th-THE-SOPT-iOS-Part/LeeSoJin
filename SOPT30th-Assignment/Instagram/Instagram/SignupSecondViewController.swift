@@ -45,7 +45,7 @@ class SignupSecondViewController: UIViewController {
     @IBAction func nextButtonTap(_ sender: Any) {
         guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
         nextViewController.userName = userName
-        self.present(nextViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 
     @objc func passwordTextFieldDidChange(_ sender: Any?) {

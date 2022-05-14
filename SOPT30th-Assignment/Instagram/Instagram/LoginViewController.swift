@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
         forgotPassword.font = UIFont.systemFont(ofSize: 11, weight: .bold)
         loginButton.isEnabled = false
         clearButton.isHidden = true
+        noAccount.sizeToFit()
     }
   
     // MARK: - Custom Methods
@@ -56,7 +57,7 @@ class LoginViewController: UIViewController {
     
     private func setUpClearBtnStatus(){
         guard let isEmailTextFieldEmpty = emailTextField.text?.isEmpty else { return }
-        clearButton.isHidden = !isEmailTextFieldEmpty
+        clearButton.isHidden = isEmailTextFieldEmpty
     }
     
     @objc func textFieldEditingChanged(_ textField: UITextField) {
@@ -70,7 +71,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTap(_ sender: Any) {
         guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
         nextViewController.userName = emailTextField.text
-        self.present(nextViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     @IBAction func signupButtonTap(_ sender: Any) {

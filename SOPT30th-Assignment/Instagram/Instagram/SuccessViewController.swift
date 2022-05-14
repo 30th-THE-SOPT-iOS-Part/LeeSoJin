@@ -20,6 +20,15 @@ class SuccessViewController: UIViewController{
         setUserNameLabel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     // MARK: - UI
     
     private func setUserNameLabel(){
@@ -33,7 +42,9 @@ class SuccessViewController: UIViewController{
         let TabBarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
         guard let TabBarController = TabBarStoryboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
         else { return }
-        self.present(TabBarController, animated: true, completion: nil)
+        guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
+        delegate.window?.rootViewController = TabBarController
     }
+
 
 }

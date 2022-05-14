@@ -18,6 +18,9 @@
 		23034B5227FC9A4A00464A25 /* password_shown_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 23034B4E27FC9A4A00464A25 /* password_shown_icon.png */; };
 		23034B5427FC9A9800464A25 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23034B5327FC9A9800464A25 /* LoginViewController.swift */; };
 		23034B5627FCA37B00464A25 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23034B5527FCA37B00464A25 /* SuccessViewController.swift */; };
+		23206C8428218FDA00CF3BD6 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23206C8228218FDA00CF3BD6 /* StoryCollectionViewCell.swift */; };
+		23206C8528218FDA00CF3BD6 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23206C8328218FDA00CF3BD6 /* StoryCollectionViewCell.xib */; };
+		23206C872821908600CF3BD6 /* StoryUserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23206C862821908600CF3BD6 /* StoryUserDataModel.swift */; };
 		2336D876280C5DA8006C07E4 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D875280C5DA8006C07E4 /* TabBar.storyboard */; };
 		2336D878280C5E71006C07E4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D877280C5E71006C07E4 /* TabBarController.swift */; };
 		2336D87C280C6029006C07E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336D87B280C6029006C07E4 /* HomeViewController.swift */; };
@@ -26,12 +29,17 @@
 		2336D884280C6662006C07E4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2336D883280C6662006C07E4 /* Search.storyboard */; };
 		23406BBA27FDF3DE00A9CD68 /* SignupFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BB927FDF3DE00A9CD68 /* SignupFirstViewController.swift */; };
 		23406BBC27FDFE3900A9CD68 /* SignupSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BBB27FDFE3900A9CD68 /* SignupSecondViewController.swift */; };
+		2343CBDB282418F70089E1F1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343CBD9282418F70089E1F1 /* FeedTableViewCell.swift */; };
+		2343CBDC282418F70089E1F1 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2343CBDA282418F70089E1F1 /* FeedTableViewCell.xib */; };
+		2343CBDE282421360089E1F1 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2343CBDD282421360089E1F1 /* FeedDataModel.swift */; };
 		23C401AE280DB1BF00DA6EAA /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401AD280DB1BF00DA6EAA /* Reels.storyboard */; };
 		23C401B0280DB1CF00DA6EAA /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C401AF280DB1CF00DA6EAA /* ReelsViewController.swift */; };
 		23C401B3280DB1FF00DA6EAA /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C401B2280DB1FF00DA6EAA /* ShopViewController.swift */; };
 		23C401B5280DB20C00DA6EAA /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401B4280DB20C00DA6EAA /* Shop.storyboard */; };
 		23C401B8280DB21D00DA6EAA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C401B7280DB21D00DA6EAA /* Profile.storyboard */; };
 		23C401BA280DB22800DA6EAA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C401B9280DB22800DA6EAA /* ProfileViewController.swift */; };
+		23FF49AB2827F50600266E82 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF49A92827F50600266E82 /* StoryTableViewCell.swift */; };
+		23FF49AC2827F50600266E82 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23FF49AA2827F50600266E82 /* StoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,9 @@
 		23034B4E27FC9A4A00464A25 /* password_shown_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password_shown_icon.png; sourceTree = "<group>"; };
 		23034B5327FC9A9800464A25 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		23034B5527FCA37B00464A25 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		23206C8228218FDA00CF3BD6 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		23206C8328218FDA00CF3BD6 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		23206C862821908600CF3BD6 /* StoryUserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryUserDataModel.swift; sourceTree = "<group>"; };
 		2336D875280C5DA8006C07E4 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		2336D877280C5E71006C07E4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2336D87B280C6029006C07E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -56,12 +67,17 @@
 		2336D883280C6662006C07E4 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		23406BB927FDF3DE00A9CD68 /* SignupFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFirstViewController.swift; sourceTree = "<group>"; };
 		23406BBB27FDFE3900A9CD68 /* SignupSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSecondViewController.swift; sourceTree = "<group>"; };
+		2343CBD9282418F70089E1F1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		2343CBDA282418F70089E1F1 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		2343CBDD282421360089E1F1 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 		23C401AD280DB1BF00DA6EAA /* Reels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reels.storyboard; sourceTree = "<group>"; };
 		23C401AF280DB1CF00DA6EAA /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		23C401B2280DB1FF00DA6EAA /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		23C401B4280DB20C00DA6EAA /* Shop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
 		23C401B7280DB21D00DA6EAA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		23C401B9280DB22800DA6EAA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		23FF49A92827F50600266E82 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		23FF49AA2827F50600266E82 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +142,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		23206C8128218FC900CF3BD6 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				23206C8228218FDA00CF3BD6 /* StoryCollectionViewCell.swift */,
+				23206C8328218FDA00CF3BD6 /* StoryCollectionViewCell.xib */,
+				23206C862821908600CF3BD6 /* StoryUserDataModel.swift */,
+				23FF49A92827F50600266E82 /* StoryTableViewCell.swift */,
+				23FF49AA2827F50600266E82 /* StoryTableViewCell.xib */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
 		2336D874280C592F006C07E4 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +166,8 @@
 		2336D879280C5FF9006C07E4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2343CBD8282412980089E1F1 /* Feed */,
+				23206C8128218FC900CF3BD6 /* Story */,
 				2336D87B280C6029006C07E4 /* HomeViewController.swift */,
 				2336D881280C664E006C07E4 /* Home.storyboard */,
 			);
@@ -151,6 +181,16 @@
 				2336D883280C6662006C07E4 /* Search.storyboard */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		2343CBD8282412980089E1F1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2343CBD9282418F70089E1F1 /* FeedTableViewCell.swift */,
+				2343CBDA282418F70089E1F1 /* FeedTableViewCell.xib */,
+				2343CBDD282421360089E1F1 /* FeedDataModel.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		23C401AC280DB1B000DA6EAA /* Reels */ = {
@@ -239,14 +279,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				23034B5227FC9A4A00464A25 /* password_shown_icon.png in Resources */,
+				23206C8528218FDA00CF3BD6 /* StoryCollectionViewCell.xib in Resources */,
 				23C401B8280DB21D00DA6EAA /* Profile.storyboard in Resources */,
 				23034B4F27FC9A4A00464A25 /* insta_logo.png in Resources */,
 				23034B4327FC86BD00464A25 /* LaunchScreen.storyboard in Resources */,
 				23C401B5280DB20C00DA6EAA /* Shop.storyboard in Resources */,
+				2343CBDC282418F70089E1F1 /* FeedTableViewCell.xib in Resources */,
 				2336D882280C664E006C07E4 /* Home.storyboard in Resources */,
 				2336D884280C6662006C07E4 /* Search.storyboard in Resources */,
 				23C401AE280DB1BF00DA6EAA /* Reels.storyboard in Resources */,
 				23034B5127FC9A4A00464A25 /* back.png in Resources */,
+				23FF49AC2827F50600266E82 /* StoryTableViewCell.xib in Resources */,
 				2336D876280C5DA8006C07E4 /* TabBar.storyboard in Resources */,
 				23034B5027FC9A4A00464A25 /* password_hidden_icon.png in Resources */,
 				23034B4027FC86BD00464A25 /* Assets.xcassets in Resources */,
@@ -261,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23206C872821908600CF3BD6 /* StoryUserDataModel.swift in Sources */,
+				23FF49AB2827F50600266E82 /* StoryTableViewCell.swift in Sources */,
 				23034B5427FC9A9800464A25 /* LoginViewController.swift in Sources */,
 				23406BBC27FDFE3900A9CD68 /* SignupSecondViewController.swift in Sources */,
 				23406BBA27FDF3DE00A9CD68 /* SignupFirstViewController.swift in Sources */,
+				2343CBDB282418F70089E1F1 /* FeedTableViewCell.swift in Sources */,
 				2336D87E280C6039006C07E4 /* SearchViewController.swift in Sources */,
 				23C401B0280DB1CF00DA6EAA /* ReelsViewController.swift in Sources */,
 				2336D87C280C6029006C07E4 /* HomeViewController.swift in Sources */,
@@ -272,7 +318,9 @@
 				23034B5627FCA37B00464A25 /* SuccessViewController.swift in Sources */,
 				23034B3927FC86BD00464A25 /* SceneDelegate.swift in Sources */,
 				23C401BA280DB22800DA6EAA /* ProfileViewController.swift in Sources */,
+				2343CBDE282421360089E1F1 /* FeedDataModel.swift in Sources */,
 				23C401B3280DB1FF00DA6EAA /* ShopViewController.swift in Sources */,
+				23206C8428218FDA00CF3BD6 /* StoryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
