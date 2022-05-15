@@ -68,9 +68,10 @@ class LoginViewController: UIViewController {
         }.contains(true)
     }
     
-    func loginAlert(){
-        let alert = UIAlertController(title:"로그인 성공",
-            message: "",
+    func loginAlert(_ data: LoginResponse){
+        guard let name = data.data?.name else { return }
+        let alert = UIAlertController(title:"회원가입 성공",
+                                      message: "\(name)님 안녕하세요",
             preferredStyle: UIAlertController.Style.alert)
         let confirm = UIAlertAction(title: "확인", style: .default){ (action) in
             let TabBarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
@@ -108,8 +109,7 @@ extension LoginViewController{
             switch response{
             case .success(let data):
                 guard let data = data as? LoginResponse else {return}
-                print("data: \(data)")
-                self.loginAlert()
+                self.loginAlert(data)
             default:
                 return
             }
