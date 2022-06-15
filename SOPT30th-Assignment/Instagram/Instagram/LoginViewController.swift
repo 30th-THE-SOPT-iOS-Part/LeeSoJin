@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
     // MARK: - @IBOutlet
@@ -67,11 +68,25 @@ class LoginViewController: UIViewController {
         }.contains(true)
     }
     
+    func loginAlert(_ data: LoginResponse){
+        guard let name = data.data?.name else { return }
+        let alert = UIAlertController(title:"회원가입 성공",
+                                      message: "\(name)님 안녕하세요",
+            preferredStyle: UIAlertController.Style.alert)
+        let confirm = UIAlertAction(title: "확인", style: .default){ (action) in
+            let TabBarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
+            guard let TabBarController = TabBarStoryboard.instantiateViewController(withIdentifier: "TabBarController") as? TabBarController
+            else { return }
+            guard let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {return}
+            delegate.window?.rootViewController = TabBarController
+        }
+        alert.addAction(confirm)
+        present(alert,animated: true,completion: nil)
+    }
+    
     // MARK: - @IBAction
     @IBAction func loginButtonTap(_ sender: Any) {
-        guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessViewController") as? SuccessViewController else { return }
-        nextViewController.userName = emailTextField.text
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        login()
     }
     
     @IBAction func signupButtonTap(_ sender: Any) {
@@ -83,3 +98,25 @@ class LoginViewController: UIViewController {
         passwordTextField.isSecureTextEntry.toggle()
     }
 }
+
+extension LoginViewController{
+    func login(){
+        guard let name = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        UserService.shared.login(name: name, email: name, password: password){
+            response in
+            switch response{
+            case .success(let data):
+                guard let data = data as? LoginResponse else {return}
+                self.loginAlert(data)
+            default:
+                return
+            }
+        }
+    }
+    
+    
+}
+
+
